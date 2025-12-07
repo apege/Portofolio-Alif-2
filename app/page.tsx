@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ArrowRight, Code, Palette, Zap, Award, Download, ExternalLink, ChevronDown, Star, TrendingUp, Users, Coffee, Briefcase, Clock, CheckCircle, Play, Send, Phone, MapPin, Heart } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, Laptop, ArrowRight, Code, Palette, Zap, Award, Download, ExternalLink, ChevronDown, Star, TrendingUp, Wrench, Server, Users, Coffee, Briefcase, Clock, CheckCircle, Play, Send, Phone, MapPin, Heart, ShoppingCart } from 'lucide-react';
 
 const PremiumPortfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,33 +41,36 @@ const PremiumPortfolio = () => {
   }, []);
 
   const skills = [
-    { name: 'React.js', level: 95, icon: '⚛️' },
-    { name: 'Next.js', level: 90, icon: '▲' },
-    { name: 'TypeScript', level: 88, icon: '💙' },
-    { name: 'Tailwind CSS', level: 92, icon: '🎨' },
-    { name: 'Node.js', level: 85, icon: '🟢' },
-    { name: 'UI/UX Design', level: 87, icon: '✨' }
-  ];
+  { name: 'PHP', level: 80, icon: '🐘' },
+  { name: 'MySQL', level: 75, icon: '🗄️' },
+  { name: 'JavaScript', level: 78, icon: '🟨' },
+  { name: 'Tailwind CSS', level: 85, icon: '🎨' },
+  { name: 'React.js', level: 55, icon: '⚛️' },
+  { name: 'Next.js', level: 50, icon: '▲' },
+  { name: 'Git & GitHub', level: 70, icon: '🐙' },
+  { name: 'Hosting & Deployment', level: 80, icon: '🌐' }
+];
+
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      desc: 'Platform e-commerce modern dengan fitur AI recommendation dan payment gateway terintegrasi',
-      tech: ['Next.js', 'TypeScript', 'Tailwind', 'Stripe'],
+      title: 'Jumpscare Industriez',
+      desc: 'Platform Online Shop yang menjual berbagai baju berkualitas dengan bantuan AI',
+      tech: ['PHP', 'Tailwind', 'MySQL', 'JavaScript', 'AJAX'],
       gradient: 'from-purple-600 to-pink-600',
-      link: '#'
+      link: 'https://jumpscareindustriez.com'
     },
     {
-      title: 'SaaS Dashboard',
-      desc: 'Dashboard analytics real-time untuk enterprise dengan data visualization',
-      tech: ['React', 'D3.js', 'Node.js', 'MongoDB'],
+      title: 'Kamus Bahasa Gaul',
+      desc: 'Platform Kamus yang berisi tentang bahasa gaul terbaru di Indonesia',
+      tech: ['HTML', 'CSS', 'JavaScript',],
       gradient: 'from-blue-600 to-cyan-600',
-      link: '#'
+      link: 'https://leafy-valkyrie-7cfbb8.netlify.app/'
     },
     {
-      title: 'Mobile Banking App',
-      desc: 'Aplikasi banking dengan keamanan tingkat tinggi dan biometric authentication',
-      tech: ['React Native', 'Firebase', 'Redux'],
+      title: 'Portofolio Website',
+      desc: 'Portofolio pribadi modern, responsive, animasi smooth, showcase project.',
+      tech: ['Next.js', 'Tailwind', 'TypeScript', 'Framer Motion'],
       gradient: 'from-emerald-600 to-teal-600',
       link: '#'
     },
@@ -81,105 +84,124 @@ const PremiumPortfolio = () => {
   ];
 
   const services = [
-    {
-      icon: <Code className="w-8 h-8" />,
-      title: 'Web Development',
-      desc: 'Membangun aplikasi web modern dengan teknologi terkini dan best practices',
-      features: ['Responsive Design', 'SEO Optimized', 'Fast Performance']
-    },
-    {
-      icon: <Palette className="w-8 h-8" />,
-      title: 'UI/UX Design',
-      desc: 'Desain interface yang elegan, user-friendly, dan conversion-focused',
-      features: ['User Research', 'Prototyping', 'Design System']
-    },
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: 'Performance Optimization',
-      desc: 'Optimasi performa aplikasi untuk pengalaman pengguna yang maksimal',
-      features: ['Code Splitting', 'Lazy Loading', 'Caching Strategy']
-    },
-    {
-      icon: <Award className="w-8 h-8" />,
-      title: 'Technical Consulting',
-      desc: 'Konsultasi teknis dan strategi pengembangan untuk bisnis Anda',
-      features: ['Architecture Design', 'Tech Stack Selection', 'Team Training']
-    }
-  ];
+  {
+    icon: <Code className="w-8 h-8" />,
+    title: 'Custom Website Development',
+    desc: 'Membangun website modern dan fungsional menggunakan PHP, MySQL, Tailwind, dan JavaScript.',
+    features: ['Landing Page', 'Company Profile', 'Custom Features']
+  },
+  {
+    icon: <ShoppingCart className="w-8 h-8" />,
+    title: 'Online Store (E-Commerce)',
+    desc: 'Pembuatan toko online lengkap dengan sistem keranjang, checkout, dan manajemen produk.',
+    features: ['Cart System', 'Checkout', 'Admin Panel']
+  },
+  {
+    icon: <Wrench className="w-8 h-8" />,
+    title: 'Website Maintenance',
+    desc: 'Perawatan website agar tetap cepat, aman, dan bebas error.',
+    features: ['Bug Fixing', 'Update Konten', 'Performa Basic']
+  },
+  {
+    icon: <Server className="w-8 h-8" />,
+    title: 'Hosting & Deployment',
+    desc: 'Bantu upload website sampai online, termasuk domain, SSL, dan hosting setup.',
+    features: ['cPanel Setup', 'SSL Install', 'Deploy Website']
+  }
+];
+
 
   const stats = [
-    { icon: <Briefcase className="w-6 h-6" />, value: '150+', label: 'Projects Completed' },
-    { icon: <Users className="w-6 h-6" />, value: '80+', label: 'Happy Clients' },
-    { icon: <Award className="w-6 h-6" />, value: '15+', label: 'Awards Won' },
-    { icon: <Coffee className="w-6 h-6" />, value: '5000+', label: 'Cups of Coffee' }
-  ];
-
-  const testimonials = [
-    {
-      name: 'Sarah Johnson',
-      role: 'CEO, TechCorp',
-      image: '👩‍💼',
-      text: 'Kerja yang luar biasa! Website kami sekarang terlihat sangat profesional dan modern. Revenue meningkat 200%!',
-      rating: 5
-    },
-    {
-      name: 'Michael Chen',
-      role: 'Founder, StartupXYZ',
-      image: '👨‍💻',
-      text: 'Developer terbaik yang pernah bekerja dengan kami. Sangat detail, profesional, dan komunikatif.',
-      rating: 5
-    },
-    {
-      name: 'Emma Williams',
-      role: 'Marketing Director, BrandCo',
-      image: '👩‍🎨',
-      text: 'Hasil melebihi ekspektasi! Timeline tepat waktu, komunikasi sangat baik, dan kualitas premium.',
-      rating: 5
-    }
-  ];
+  { icon: <Briefcase className="w-6 h-6" />, value: '3+', label: 'Projects Completed' },
+  { icon: <Users className="w-6 h-6" />, value: '2+', label: 'Client Collaborations' },
+  { icon: <Award className="w-6 h-6" />, value: '1', label: 'Year of Experience' },
+  { icon: <Laptop className="w-6 h-6" />, value: '200+', label: 'Hours Coding' }
+];
 
   const experiences = [
-    {
-      year: '2022 - Present',
-      title: 'Senior Full Stack Developer',
-      company: 'Tech Innovations Inc.',
-      desc: 'Memimpin tim pengembangan untuk membangun aplikasi enterprise scale dengan microservices architecture',
-      achievements: ['Led team of 8 developers', 'Reduced server costs by 40%', 'Implemented CI/CD pipeline']
-    },
-    {
-      year: '2020 - 2022',
-      title: 'Frontend Developer',
-      company: 'Digital Agency Pro',
-      desc: 'Mengembangkan website dan aplikasi web untuk berbagai klien internasional dari berbagai industri',
-      achievements: ['Delivered 50+ projects', 'Improved page speed by 60%', 'Mentored junior developers']
-    },
-    {
-      year: '2018 - 2020',
-      title: 'Junior Developer',
-      company: 'Startup Studio',
-      desc: 'Membangun MVP dan prototype untuk berbagai startup tech dengan agile methodology',
-      achievements: ['Built 15+ MVPs', 'Learned modern frameworks', 'Participated in hackathons']
-    }
-  ];
-
-  const certifications = [
-    { name: 'AWS Certified Developer - Associate', issuer: 'Amazon Web Services', year: '2023', icon: '☁️' },
-    { name: 'Meta Front-End Developer Professional', issuer: 'Meta', year: '2022', icon: '📘' },
-    { name: 'Google UX Design Professional', issuer: 'Google', year: '2022', icon: '🎨' },
-    { name: 'Advanced React & Redux', issuer: 'Udemy', year: '2021', icon: '⚛️' }
-  ];
+  {
+    year: '2025 - Present',
+    title: 'Freelance Web Developer',
+    company: 'Self-employed',
+    desc: 'Mengerjakan project website untuk UMKM dan klien, termasuk sistem toko online, landing page, dan fitur backend.',
+    achievements: [
+      'Membangun website toko online internasional untuk penjualan single product',
+      'Membuat sistem login & register lengkap (Email, Google OAuth, OTP)',
+      'Mengembangkan sistem keranjang belanja dan checkout dinamis'
+    ]
+  },
+  {
+    year: '2024 - Present',
+    title: 'Student Web Developer',
+    company: 'SMK — Kelas 10–11',
+    desc: 'Belajar web development melalui sekolah, project pribadi, dan riset mandiri, dengan fokus pada PHP & frontend.',
+    achievements: [
+      'Menguasai PHP, MySQL, Tailwind CSS, dan JavaScript',
+      'Membangun beberapa mini-project untuk latihan dan portofolio',
+      'Belajar deploy website menggunakan cPanel dan managed hosting'
+    ]
+  },
+  {
+    year: '2023 - 2024',
+    title: 'Beginner Web Developer',
+    company: 'Self-learning',
+    desc: 'Mulai belajar pemrograman dasar dan membuat website sederhana.',
+    achievements: [
+      'Belajar HTML, CSS, JavaScript dasar',
+      'Memahami konsep database dan GitHub dasar',
+      'Membangun website statis pertama'
+    ]
+  }
+];
 
   const techStack = [
-    { category: 'Frontend', items: ['React', 'Next.js', 'Vue.js', 'TypeScript', 'Tailwind CSS'] },
-    { category: 'Backend', items: ['Node.js', 'Express', 'Python', 'Django', 'PostgreSQL'] },
-    { category: 'DevOps', items: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'Nginx'] },
-    { category: 'Tools', items: ['Git', 'Figma', 'VS Code', 'Postman', 'Jira'] }
+    { category: 'Frontend', items: ['HTML', 'Next.js', 'CSS', 'Tailwind CSS'] },
+    { category: 'Backend', items: ['AJAX', 'PHP Native', 'REST API Basic', 'cURL', 'MySQL'] },
+    { category: 'DevOps', items: ['cPanel / Shared Hosting', 'Nginx/Apache basic', 'SSL & Domain Setup', 'GitHub Deployment'] },
+    { category: 'Tools', items: ['Git', 'Figma', 'VS Code', 'Postman', 'XAMPP'] }
   ];
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert('Pesan terkirim! Saya akan segera menghubungi Anda.');
-    setFormData({ name: '', email: '', message: '' });
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      // Ganti dengan Service ID, Template ID, dan Public Key dari EmailJS
+      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          service_id: 'service_cbsw0oy', // Ganti dengan Service ID kamu
+          template_id: 'template_s2m9rds', // Ganti dengan Template ID kamu
+          user_id: 'uQC4Ybfp-i98w2Wi-', // Ganti dengan Public Key kamu
+          template_params: {
+            from_name: formData.name,
+            from_email: formData.email,
+            message: formData.message,
+            to_name: 'Muhammad Alif Muzakky', // Nama kamu
+          },
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setSubmitStatus('idle'), 5000);
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -212,7 +234,7 @@ const PremiumPortfolio = () => {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent cursor-pointer" onClick={() => scrollToSection('home')}>
-              Portfolio
+              Muhammad Alif Muzakky
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -265,7 +287,7 @@ const PremiumPortfolio = () => {
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              Creative Developer
+              Alif.WebDev
             </span>
           </h1>
           
@@ -290,9 +312,9 @@ const PremiumPortfolio = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 mt-12">
             {[
-              { icon: <Github />, link: 'https://github.com', label: 'GitHub' },
-              { icon: <Linkedin />, link: 'https://linkedin.com', label: 'LinkedIn' },
-              { icon: <Mail />, link: '#contact', label: 'Email' }
+              { icon: <Github />, link: 'https://github.com/apege', label: 'GitHub' },
+              { icon: <Linkedin />, link: 'https://www.linkedin.com/in/muhammad-alif-muzakky-055159358', label: 'LinkedIn' },
+              { icon: <Mail />, link: 'mailto:alifmuzakki1110@gmail.com', label: 'Email' }
             ].map((social, i) => (
               <a
                 key={i}
@@ -337,10 +359,13 @@ const PremiumPortfolio = () => {
 
             <div>
               <p className="text-gray-400 text-lg leading-relaxed mb-6">
-                Saya adalah seorang <span className="text-purple-400 font-semibold">Full Stack Developer</span> yang passionate dalam menciptakan pengalaman digital yang luar biasa. Dengan pengalaman lebih dari <span className="text-pink-400 font-semibold">5 tahun</span>, saya telah membantu berbagai klien dari startup hingga enterprise mewujudkan visi mereka menjadi kenyataan.
+                Saya adalah seorang <span className="text-purple-400 font-semibold">Web Developer</span> yang saat ini bersekolah di SMK dan aktif membangun berbagai proyek web modern. 
+                Saya fokus pada pembuatan website yang cepat, responsif, dan mudah digunakan.
               </p>
+
               <p className="text-gray-400 text-lg leading-relaxed mb-8">
-                Spesialisasi saya adalah membangun aplikasi web modern menggunakan teknologi terkini seperti <span className="text-blue-400 font-semibold">React, Next.js, dan TypeScript</span> dengan fokus pada performa, skalabilitas, dan user experience yang exceptional.
+                Saya sering menggunakan teknologi seperti <span className="text-blue-400 font-semibold">PHP, MySQL, Tailwind CSS, JavaScript, dan Next.js</span>. 
+                Saat ini saya juga mengerjakan project e-commerce internasional dan terus mengembangkan skill di dunia web development.
               </p>
 
               <div className="space-y-4">
@@ -536,72 +561,6 @@ const PremiumPortfolio = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="relative py-32 px-6">
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Client Testimonials
-            </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full" />
-            <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-              Apa kata klien tentang hasil kerja saya
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, i) => (
-              <div
-                key={i}
-                className="p-8 rounded-2xl bg-gradient-to-br from-purple-900/20 to-pink-900/20 backdrop-blur-sm border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2"
-              >
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, j) => (
-                    <Star key={j} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-gray-300 mb-6 italic leading-relaxed">"{testimonial.text}"</p>
-                <div className="flex items-center gap-3">
-                  <div className="text-4xl">{testimonial.image}</div>
-                  <div>
-                    <div className="font-semibold">{testimonial.name}</div>
-                    <div className="text-sm text-gray-400">{testimonial.role}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications Section */}
-      <section className="relative py-32 px-6">
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Certifications & Awards
-            </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full" />
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {certifications.map((cert, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-4 p-6 rounded-2xl bg-gradient-to-br from-purple-900/20 to-pink-900/20 backdrop-blur-sm border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 group"
-              >
-                <div className="text-3xl group-hover:scale-110 transition-transform">{cert.icon}</div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold mb-1 group-hover:text-purple-400 transition-colors">{cert.name}</h3>
-                  <div className="text-gray-400 text-sm">{cert.issuer} • {cert.year}</div>
-                </div>
-                <CheckCircle className="w-6 h-6 text-purple-400 flex-shrink-0" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="relative py-32 px-6">
         <div className="max-w-4xl mx-auto relative z-10">
@@ -658,7 +617,7 @@ const PremiumPortfolio = () => {
                     <div>
                       <div className="font-semibold mb-1">Email</div>
                       <a href="mailto:hello@portfolio.com" className="text-gray-400 hover:text-purple-400 transition-colors">
-                        hello@portfolio.com
+                        alifmuzakki1110@gmail.com
                       </a>
                     </div>
                   </div>
@@ -668,7 +627,7 @@ const PremiumPortfolio = () => {
                     <div>
                       <div className="font-semibold mb-1">Phone</div>
                       <a href="tel:+6281234567890" className="text-gray-400 hover:text-purple-400 transition-colors">
-                        +62 812-3456-7890
+                        +62 895-4127-35876
                       </a>
                     </div>
                   </div>
@@ -677,7 +636,7 @@ const PremiumPortfolio = () => {
                     <MapPin className="w-6 h-6 text-purple-400 flex-shrink-0 mt-1" />
                     <div>
                       <div className="font-semibold mb-1">Location</div>
-                      <div className="text-gray-400">Jakarta, Indonesia</div>
+                      <div className="text-gray-400">Bandung, Indonesia</div>
                     </div>
                   </div>
                 </div>
@@ -687,9 +646,9 @@ const PremiumPortfolio = () => {
                 <h3 className="text-xl font-bold mb-4">Follow Me</h3>
                 <div className="flex gap-4">
                   {[
-                    { icon: <Github />, link: 'https://github.com', label: 'GitHub' },
-                    { icon: <Linkedin />, link: 'https://linkedin.com', label: 'LinkedIn' },
-                    { icon: <Mail />, link: 'mailto:hello@portfolio.com', label: 'Email' }
+                    { icon: <Github />, link: 'https://github.com/apege', label: 'GitHub' },
+                    { icon: <Linkedin />, link: 'https://www.linkedin.com/in/muhammad-alif-muzakky-055159358', label: 'LinkedIn' },
+                    { icon: <Mail />, link: 'mailto:alifmuzakki1110@gmail.com', label: 'Email' }
                   ].map((social, i) => (
                     <a
                       key={i}
@@ -718,7 +677,7 @@ const PremiumPortfolio = () => {
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     className="w-full px-4 py-3 rounded-lg bg-black/50 border border-purple-500/30 focus:border-purple-500 focus:outline-none transition-colors text-white placeholder-gray-500"
-                    placeholder="John Doe"
+                    placeholder="Lorem Ipsum"
                     required
                   />
                 </div>
@@ -730,7 +689,7 @@ const PremiumPortfolio = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     className="w-full px-4 py-3 rounded-lg bg-black/50 border border-purple-500/30 focus:border-purple-500 focus:outline-none transition-colors text-white placeholder-gray-500"
-                    placeholder="john@example.com"
+                    placeholder="people@example.com"
                     required
                   />
                 </div>
