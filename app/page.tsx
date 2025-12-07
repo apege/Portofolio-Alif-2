@@ -358,7 +358,7 @@ const PremiumPortfolio = () => {
 
             <div>
               <p className="text-gray-400 text-lg leading-relaxed mb-6">
-                Saya adalah seorang <span className="text-purple-400 font-semibold">Web Developer</span> yang saat ini bersekolah di SMK dan aktif membangun berbagai proyek web modern. 
+                Saya adalah seorang <span className="text-purple-400 font-semibold">Web Developer</span> yang saat ini bersekolah di SMKN 4 Bandung dan aktif membangun berbagai proyek web modern. 
                 Saya fokus pada pembuatan website yang cepat, responsif, dan mudah digunakan.
               </p>
 
