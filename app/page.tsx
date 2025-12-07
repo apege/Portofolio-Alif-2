@@ -74,13 +74,6 @@ const PremiumPortfolio = () => {
       gradient: 'from-emerald-600 to-teal-600',
       link: '#'
     },
-    {
-      title: 'AI Content Generator',
-      desc: 'Platform AI untuk generate konten marketing dengan GPT-4 integration',
-      tech: ['Next.js', 'OpenAI', 'Prisma', 'PostgreSQL'],
-      gradient: 'from-orange-600 to-red-600',
-      link: '#'
-    }
   ];
 
   const services = [
