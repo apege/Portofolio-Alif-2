@@ -297,8 +297,14 @@ const PremiumPortfolio = () => {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <button className="px-8 py-4 border border-purple-500/30 rounded-full font-semibold hover:bg-purple-500/10 transition-all duration-300 flex items-center gap-2">
+            <a 
+              href="/CV_MuhammadAlifMuzakky.pdf" 
+              download 
+              className="flex items-center gap-2"
+            >
               <Download className="w-5 h-5" />
               Download CV
+            </a>
             </button>
           </div>
 
