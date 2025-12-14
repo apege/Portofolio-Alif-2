@@ -330,12 +330,12 @@ const PremiumPortfolio = () => {
 
             <div>
               <p className="text-gray-400 text-lg leading-relaxed mb-6">
-                Gue adalah seorang <span className="text-gray-300 font-semibold">Web Developer</span> yang lagi sekolah di SMKN 4 Bandung sambil aktif ngerjain project web. 
-                Fokus gue bikin website yang cepet load-nya, responsive di semua device, dan gampang dipake user.
+                Aku adalah seorang <span className="text-gray-300 font-semibold">Web Developer</span> yang lagi sekolah di SMKN 4 Bandung sambil aktif ngerjain project web. 
+                Fokus aku bikin website yang cepet load-nya, responsive di semua device, dan gampang dipake user.
               </p>
 
               <p className="text-gray-400 text-lg leading-relaxed mb-8">
-                Tech stack yang sering gue pakai: <span className="text-gray-300 font-semibold">PHP, MySQL, Tailwind CSS, JavaScript, sama Next.js</span>. 
+                Tech stack yang sering aku pakai: <span className="text-gray-300 font-semibold">PHP, MySQL, Tailwind CSS, JavaScript, sama Next.js</span>. 
                 Sekarang lagi handle project e-commerce yang clientnya dari luar negeri, sambil terus belajar hal-hal baru.
               </p>
 
@@ -390,7 +390,7 @@ const PremiumPortfolio = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto rounded-full" />
             <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-              Layanan web development yang gue tawarkan
+              Layanan web development yang aku tawarkan
             </p>
           </div>
 
@@ -427,7 +427,7 @@ const PremiumPortfolio = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto rounded-full" />
             <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-              Project-project yang udah gue kerjain
+              Project-project yang udah aku kerjain
             </p>
           </div>
 
@@ -544,7 +544,7 @@ const PremiumPortfolio = () => {
                   className="px-8 py-4 bg-gradient-to-r from-gray-700 to-gray-900 rounded-full font-semibold hover:shadow-lg hover:shadow-gray-700/50 transition-all duration-300 flex items-center gap-2"
                 >
                   <Mail className="w-5 h-5" />
-                  Hubungi Gue
+                  Hubungi aku
                 </button>
                 <button 
                   onClick={() => scrollToSection('projects')}
@@ -670,13 +670,13 @@ const PremiumPortfolio = () => {
 
                 {submitStatus === 'success' && (
                   <div className="p-4 rounded-lg bg-green-900/30 border border-green-700/50 text-green-300 text-sm">
-                    Pesan berhasil dikirim! Gue bakal bales secepetnya.
+                    Pesan berhasil dikirim! aku bakal bales secepetnya.
                   </div>
                 )}
 
                 {submitStatus === 'error' && (
                   <div className="p-4 rounded-lg bg-red-900/30 border border-red-700/50 text-red-300 text-sm">
-                    Waduh, ada error. Coba lagi atau langsung email gue aja.
+                    Waduh, ada error. Coba lagi atau langsung email aku aja.
                   </div>
                 )}
 
